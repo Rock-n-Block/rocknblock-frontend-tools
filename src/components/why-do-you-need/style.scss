@@ -1,0 +1,108 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+.launch {
+  max-width: 1440px;
+  height: 950px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 89px 0 96px 0;
+  @include b('tablet') {
+    padding: 0 20px 50px 20px;
+    margin-top: 100px;
+    height: 600px;
+  }
+
+  @include b('mobile') {
+    padding: 10px;
+    height: 550px;
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-family: TT Norms, sans-serif;
+    font-style: normal;
+    width: 60%;
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+
+    @include b('tablet') {
+      font-size: 45px;
+      line-height: 40px;
+      margin-top: 200px;
+    }
+    @include b('mobile') {
+      font-size: 40px;
+      line-height: 40px;
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+
+  p {
+    font-family: TT Commons, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+    width:55%;
+    margin-top: 40px;
+    z-index: 1;
+    text-align: center;
+
+    @include b('tablet') {
+      font-size: 22px;
+      line-height: 25px;
+      width: 100%;
+    }
+    @include b('mobile') {
+      font-family: TT Commons, sans-serif;
+      opacity: 0.9;
+      font-size: 22px;
+      line-height: 25px;
+      color: #FFFFFF;
+      width: 100%;
+    }
+  }
+
+  &__bg-molnia {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: 1;
+
+    @include b('tablet') {
+      display: none;
+    }
+    
+    @include b('mobile') {
+      display: none;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    @include b('tablet') {
+      top: -100px;
+    }
+    
+
+    @include b('mobile') {
+      object-fit:fill;
+      top: -100px;
+    }
+  }
+
+  
+}
