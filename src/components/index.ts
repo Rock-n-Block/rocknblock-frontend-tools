@@ -14,6 +14,5 @@ export { default as ToolsInterface } from './tools-interface';
 export { default as ToolsOptions } from './tools-options';
 export { default as About} from './about';
 export { default as WhyDoYouNeed} from './why-do-you-need';
-export { default as OtherSites} from './other-sites';
 export { default as Input } from './input';
 export { default as SocialInput } from './input/socialInput';
