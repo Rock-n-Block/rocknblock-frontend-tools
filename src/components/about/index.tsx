@@ -1,7 +1,5 @@
 import {FunctionalComponent, h} from 'preact';
 import style from './style.scss';
-import bgImg from '../../assets/img/about-bg.png';
-import bgImgMobile from '../../assets/img/about-bg-mobile2.png';
 
 const About: FunctionalComponent = () => {
 
@@ -20,10 +18,10 @@ const About: FunctionalComponent = () => {
 
             <div className={style['about__bg']}>
                 <picture>
-                    <source type="image/webp" srcSet={bgImg} media="(min-width: 1440px)" />
-                    <source type="image/webp" srcSet={bgImg} media="(min-width: 768px)" />
-                    <source type="image/webp" srcSet={bgImg} media="(max-width: 768px)" />
-                    <img src={bgImg} alt=''/>
+                    <source type="image/webp" srcSet='../../assets/img/about-bg.png' media="(min-width: 1440px)" />
+                    <source type="image/webp" srcSet='../../assets/img/about-bg.png' media="(min-width: 768px)" />
+                    <source type="image/webp" srcSet='../../assets/img/about-bg.png' media="(max-width: 768px)" />
+                    <img src='../../assets/img/about-bg.png' alt=''/>
                    
                 </picture>
             </div>

@@ -1,8 +1,5 @@
 import {FunctionalComponent, h} from 'preact';
 import style from './style.scss';
-import cardFirst from '../../assets/img/cardFirst.png';
-import cardSecond from '../../assets/img/cardSecond.png';
-import cardThird from '../../assets/img/cardThird.png';
 
 interface ICard {
     icon: string;
@@ -11,15 +8,15 @@ interface ICard {
 const WhatAreTheTools: FunctionalComponent = () => {
     const dataCards: Array<ICard> = [
         {
-            icon: cardFirst,
+            icon: '../../assets/img/cardFirst.png',
             text: 'Prediction of the market movement',
         },
         {
-            icon: cardSecond,
+            icon: '../../assets/img/cardSecond.png',
             text: 'Exploration of various pools, pairs, and swaps',
         },
         {
-            icon: cardThird,
+            icon: '../../assets/img/cardThird.png',
             text: 'Evaluation of real-time data, for successful trading strategies.',
         }
     ]
