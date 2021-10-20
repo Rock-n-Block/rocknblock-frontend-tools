@@ -5,11 +5,10 @@
   "license": "MIT",
   "scripts": {
     "build": "preact build",
-    "serve": "preact build && preact serve",
+    "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src/**/*.{ts,tsx}",
-    "test": "jest ./tests",
-    "start": "if-env NODE_ENV='production' && npm run serve || npm run serve"
+    "test": "jest ./tests"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
