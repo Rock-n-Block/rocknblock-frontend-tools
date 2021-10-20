@@ -9,7 +9,7 @@
     "dev": "preact watch",
     "lint": "eslint src/**/*.{ts,tsx}",
     "test": "jest ./tests",
-    "start": "if-env NODE_ENV='production' && npm run serve || npm run dev"
+    "start": "if-env NODE_ENV='production' && npm run serve || npm run serve"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
