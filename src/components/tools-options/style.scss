@@ -1,0 +1,106 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+.dev {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 78px;
+
+  @include b('desktop') {
+    padding: 40px 20px 33px 20px;
+  }
+
+  &__title {
+    font-family: TTNorms, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    max-width: 850px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+
+    @include b('desktop') {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    @include b('350') {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+
+  &__cards {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 40px;
+    padding-bottom: 100px;
+
+    @include b('desktop') {
+      overflow-x: auto;
+      padding-bottom: 83px;
+    }
+
+    @include b('mobile') {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    &_item {
+      width: 340px;
+      height: 280px;
+      padding: 20px;
+      background: linear-gradient(30.15deg, #000000 14.13%, #272525 79.31%);
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+
+      @include b('mobile') {
+        width: 320px;
+        height: 290px;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height:80px;
+      }
+
+      h2 {
+        padding-top: 20px;
+        font-family: TTCommons, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: TT Commons, sans-serif;
+        padding-top: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
